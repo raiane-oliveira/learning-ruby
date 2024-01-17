@@ -53,6 +53,8 @@ when "insert"
       puts "\nRifa inserida com sucesso!"
     end
 
+    Create_CSV.new(in_memory_raffle).execute
+
   rescue Interrupt
     puts "\nAção interrompida!"
   end

@@ -1,4 +1,6 @@
 class InMemoryRaffle
+  attr_accessor :items
+
   def initialize
     @items = []
   end
