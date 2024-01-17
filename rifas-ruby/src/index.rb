@@ -12,7 +12,7 @@ require_relative 'utils/get-input'
 
 choiceUser = ARGV[0]
 
-if ARGV.length != 1 || !ARGV.include?(choiceUser)
+if ARGV.length != 1 || !['insert', 'delete', 'find', 'show', 'create-csv'].include?(choiceUser)
   puts "Use uma dessas opções [insert], [delete], [find], [show], [create-csv]"
   exit 1
 end
